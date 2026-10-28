@@ -1,6 +1,6 @@
 # Installazione e opzioni
 
-Mod opzionali di **gallongg** per **Pikmin 4 1.1.1 su Eden**.
+Mod opzionali per **Pikmin 4 1.1.1 su Eden**.
 Scegli le funzioni che ti servono: non attivare tutte le varianti insieme.
 
 | Funzione | Opzioni |

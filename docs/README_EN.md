@@ -1,6 +1,6 @@
 # Installation and options
 
-For **Pikmin 4 update 1.1.1 on Eden**, by **gallongg**.
+For **Pikmin 4 update 1.1.1 on Eden**.
 This is a modular beta: install only the options you want.
 
 | Archive group | Options | Selection |

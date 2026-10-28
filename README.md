@@ -69,6 +69,6 @@ python3 tools/verify_sources.py
 These are offline code/packaging checks, not game tests.
 See [source notes](docs/SOURCE_NOTES.md).
 
-Maintained by **gallongg** ([milkywaysheriff](https://github.com/milkywaysheriff)).
+Maintained by [milkywaysheriff](https://github.com/milkywaysheriff).
 Development used OpenAI Codex assistance; earlier reference work is credited
 to Fl4sh9174. Full acknowledgements are in [Credits](docs/CREDITS.md).
