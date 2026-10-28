@@ -171,7 +171,7 @@ def main():
     download = OUT / (STEM + '.zip')
     write_zip(download, PREFIX, files)
     source_names = {'.gitignore', '.release-files.json', 'README.md',
-                    '.github/workflows/verify.yml', 'tests/test_publication.py',
+                    '.github/workflows/verify.yml', '.github/workflows/publish.yml', 'tests/test_publication.py',
                     'tools/build_release.py', 'tools/verify_sources.py', 'tools/publish_github.py',
                     'docs/catalog.json', 'docs/RELEASE_NOTES.md'}
     source_names.update('docs/' + name for name in DOC_NAMES)

@@ -9,7 +9,7 @@
     {
       "id": "fps60",
       "group": "fps",
-      "folder": "P4 - FPS 60 - v4",
+      "folder": "P4 - FPS 60",
       "files": [
         {
           "source": "patches/fps/fps60/exefs/1.1.1.pchtxt",
@@ -28,7 +28,7 @@
     {
       "id": "fps120",
       "group": "fps",
-      "folder": "P4 - FPS 120 - v4",
+      "folder": "P4 - FPS 120",
       "files": [
         {
           "source": "patches/fps/fps120/exefs/1.1.1.pchtxt",
@@ -47,7 +47,7 @@
     {
       "id": "fps180",
       "group": "fps",
-      "folder": "P4 - FPS 180 - v4",
+      "folder": "P4 - FPS 180",
       "files": [
         {
           "source": "patches/fps/fps180/exefs/1.1.1.pchtxt",
@@ -66,7 +66,7 @@
     {
       "id": "camera12.5",
       "group": "camera",
-      "folder": "P4 - Camera Speed +12.5 Percent - v3",
+      "folder": "P4 - Camera Speed +12.5 Percent",
       "files": [
         {
           "source": "patches/camera/camera12_5/exefs/1.1.1.pchtxt",
@@ -80,7 +80,7 @@
     {
       "id": "camera25",
       "group": "camera",
-      "folder": "P4 - Camera Speed +25 Percent - v3",
+      "folder": "P4 - Camera Speed +25 Percent",
       "files": [
         {
           "source": "patches/camera/camera25/exefs/1.1.1.pchtxt",
@@ -94,7 +94,7 @@
     {
       "id": "camera50",
       "group": "camera",
-      "folder": "P4 - Camera Speed +50 Percent - v3",
+      "folder": "P4 - Camera Speed +50 Percent",
       "files": [
         {
           "source": "patches/camera/camera50/exefs/1.1.1.pchtxt",
@@ -108,7 +108,7 @@
     {
       "id": "camera75",
       "group": "camera",
-      "folder": "P4 - Camera Speed +75 Percent - v3",
+      "folder": "P4 - Camera Speed +75 Percent",
       "files": [
         {
           "source": "patches/camera/camera75/exefs/1.1.1.pchtxt",
@@ -122,7 +122,7 @@
     {
       "id": "camera100",
       "group": "camera",
-      "folder": "P4 - Camera Speed +100 Percent - v3",
+      "folder": "P4 - Camera Speed +100 Percent",
       "files": [
         {
           "source": "patches/camera/camera100/exefs/1.1.1.pchtxt",
@@ -136,7 +136,7 @@
     {
       "id": "timing",
       "group": "timing",
-      "folder": "P4 - Pikmin Movement and Timers - A41",
+      "folder": "P4 - Pikmin Movement and Timers",
       "files": [
         {
           "source": "patches/timing/timing/exefs/1.1.1.pchtxt",
@@ -150,7 +150,7 @@
     {
       "id": "uw5120x2160",
       "group": "ultrawide",
-      "folder": "P4 - Ultrawide 5120x2160 - Per View A45",
+      "folder": "P4 - Ultrawide 5120x2160",
       "files": [
         {
           "source": "patches/ultrawide/uw5120x2160/exefs/1.1.1.pchtxt",
@@ -164,7 +164,7 @@
     {
       "id": "uw3440x1440",
       "group": "ultrawide",
-      "folder": "P4 - Ultrawide 3440x1440 - Per View A45",
+      "folder": "P4 - Ultrawide 3440x1440",
       "files": [
         {
           "source": "patches/ultrawide/uw5120x2160/exefs/1.1.1.pchtxt",
@@ -178,7 +178,7 @@
     {
       "id": "no-ca",
       "group": "optional",
-      "folder": "P4 - Chromatic Aberration OFF - A42",
+      "folder": "P4 - Chromatic Aberration OFF",
       "files": [
         {
           "source": "patches/optional/no-ca/exefs/1.1.1.pchtxt",
@@ -192,7 +192,7 @@
     {
       "id": "dr-lock",
       "group": "optional",
-      "folder": "P4 - Dynamic Resolution Lock - v5",
+      "folder": "P4 - Dynamic Resolution Lock",
       "files": [
         {
           "source": "patches/optional/dr-lock/exefs/1.1.1.pchtxt",

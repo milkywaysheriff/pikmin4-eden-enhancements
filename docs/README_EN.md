@@ -1,98 +1,86 @@
-# Pikmin 4 — Eden Enhancements 1.0-beta1
+# Installation and options
 
-Published by **gallongg**. For **Pikmin 4 update 1.1.1**, title ID
-`0100B7C00933A000`, on Eden. This is a modular beta, with different levels
-of gameplay verification for each option. Read `VERIFICATION.md`.
+For **Pikmin 4 update 1.1.1 on Eden**, by **gallongg**.
+This is a modular beta: install only the options you want.
 
-## Choose your options
-
-| Package group | Options | Selection rule |
+| Archive group | Options | Selection |
 |---|---|---|
-| `01_FPS_choose_one` | 60, 120, 180 FPS | At most one; 120/180 are experimental |
-| `02_Timing` | Pikmin Movement and Timers A41 | Required with any included FPS option |
-| `03_Camera_choose_one` | +12.5%, +25%, +50%, +75%, +100% | At most one; changes manual rotation speed, not camera distance |
-| `04_Ultrawide_choose_one` | 5120×2160 or 3440×1440, A45 | At most one; both use the per-view projection method |
-| `05_Optional` | Chromatic Aberration OFF; Dynamic Resolution Lock | Independently optional |
+| `01_FPS_choose_one` | 60, 120 or 180 FPS target | At most one |
+| `02_Timing` | Pikmin Movement and Timers: fixes following and jumping onto Oatchi at higher FPS | Required with any included FPS mod |
+| `03_Camera_choose_one` | Manual camera rotation +12.5%, +25%, +50%, +75% or +100% | At most one |
+| `04_Ultrawide_choose_one` | 3440×1440 or 5120×2160 | At most one |
+| `05_Optional` | Chromatic Aberration OFF; Dynamic Resolution Lock | Either or both |
 
-You can use camera or optional graphics patches without changing the FPS.
-Disable all FPS options to return to the game's original 30 FPS behavior;
-also disable this pack's timing patch for an unmodified timing baseline.
+Camera and graphics options can be used without changing the frame rate.
+To return to the original 30 FPS timing, disable all FPS mods and the
+Pikmin Movement and Timers mod.
 
-The most recently recorded local setup used **60 FPS + timing A41 + camera
-+50% + ultrawide 5120×2160 A45 + CA OFF + DR Lock**. This is a record of the
-tested configuration, not a claim that all options have equal coverage.
+## Install
 
-## Installation
+1. Download the main mod ZIP from the release and extract it outside
+   Eden's mod directory. The Sources ZIP is for development.
+2. Stop emulation and close Eden. Back up existing mods for the same
+   features outside the mod directory.
+3. Find Pikmin 4's mod data location from the game's right-click menu in
+   Eden. Close Eden again before copying files.
+4. Copy **only your chosen `P4 - ...` folders** from inside the numbered
+   groups directly into that location. Do not copy the archive root or
+   the numbered group folders there.
+5. Reopen Eden and enable your choices in the game's properties, with
+   update **1.1.1** selected. Keep emulation speed at **100%**.
 
-1. Stop emulation and close Eden. Back up your existing Pikmin 4 mod folders
-   somewhere outside the mod directory.
-2. In Eden, right-click Pikmin 4 and open its mod data location, then close
-   Eden again before copying files. Use this action to find your actual
-   profile; no Linux-specific install path is assumed.
-3. Choose the options you want. Copy **only the selected `P4 - ...` folders**
-   from inside the numbered groups directly into the game's mod directory.
-   Do not copy the archive root or the numbered grouping folders there.
-4. Each installed mod must have this structure:
+An FPS option must be installed like this:
 
-   ```text
-   <Pikmin 4 mod directory>/
-     P4 - FPS 60 - v4/
-       exefs/1.1.1.pchtxt
-       exefs/1.1.1_sdk.pchtxt
-     P4 - Pikmin Movement and Timers - A41/
-       exefs/1.1.1.pchtxt
-   ```
+```text
+<Pikmin 4 mod directory>/
+  P4 - FPS 60/
+    exefs/1.1.1.pchtxt
+    exefs/1.1.1_sdk.pchtxt
+  P4 - Pikmin Movement and Timers/
+    exefs/1.1.1.pchtxt
+```
 
-5. If you select an FPS option, copy **both files** in its `exefs` folder
-   and install/enable A41 from `02_Timing` as well.
-6. Open Eden, enable your chosen options in the game's properties and
-   confirm update **1.1.1** is selected. Keep emulation speed at **100%**.
-   Do not combine several FPS, camera, or ultrawide variants.
+Keep **both main and SDK files** of your FPS option and enable the
+separate movement/timing mod too. Never enable several FPS, camera or
+ultrawide variants together. When upgrading, remove older equivalent
+folders first: installing a newly named copy does not disable the old one.
 
-If upgrading from the author's earlier local/test packages, move the old
-equivalent folders out first: `FPS ... v4`, `Camera ... v3`,
-`TEST - Follow progress delta ... A38` (which may already contain A41),
-`TEST - Ultrawide ... v6` (which may already contain A45), and old CA/DR
-copies. The new folder names do not disable the old copies automatically.
+## Options and settings
 
-## Ultrawide settings
+**FPS:** targets 60, 120 or 180 FPS. Achieved FPS depends on performance.
+120 FPS is experimental; 180 FPS has not been play-tested locally.
 
-Use **GPU accuracy High**, Eden resolution scale **1×**, and **Stretch to
-Window** with a window/display area matching the chosen dimensions. The
-local setup used CPU Unsafe; this pack does not change CPU settings.
-The tested High setting matters: a yellow rendering glitch previously
-appeared with GPU Low, particularly after returning to the title and
-loading a save again. Do not multiply these viewports by another 4× scale.
+**Pikmin Movement and Timers:** adjusts following, movement progress
+checks and jumping onto Oatchi for higher frame rates. It does not fix
+every frame-dependent system in the game.
 
-Both resolutions are commonly called 21:9, but their exact ratios differ:
-5120×2160 is 64:27 and 3440×1440 is 43:18. Avoid stretching either to a
-32:9 screen. No 32:9 variant is supplied in this release.
+**Camera:** increases manual rotation speed, not camera distance or zoom.
 
-A45 derives the perspective aspect from each individual view rectangle,
-including split screen. Corrected Dandori 3D proportions have been reported
-for the 5120×2160 version. The 3440×1440 A45 version changes only the viewport
-string and has not yet been tested in gameplay.
+**Ultrawide:** adapts perspective for each player view. Use **GPU High**,
+Eden scale **1×**, **Stretch to Window** and a matching image area. The
+5120×2160 version has positive feedback, including the two player views
+shown during Dandori battles. The current 3440×1440 variant has not yet
+been play-tested. No 32:9 option is supplied. Exact aspect ratios are
+64:27 and 43:18 respectively, both commonly called 21:9.
 
-These are **requested game viewport sizes**. Internal 3D render resolution
-has not been measured. DR Lock keeps the game's minimum equal to its own
-profile maximum; it does not force 100% screen percentage or guarantee
-1:1 rendering. Higher FPS targets also require sufficient performance;
-the 120 FPS patch does not guarantee that every scene reaches 120 FPS.
+Do not apply another 4× scale or stack another output/projection mod.
+GPU Low caused a yellow rendering glitch in earlier local tests,
+particularly after returning to the title and loading again. The local
+setup uses CPU Unsafe; these mods do not change CPU settings.
 
-## Compatibility and removal
+**Chromatic Aberration OFF:** sets the final colored-fringe intensity to
+zero. A controlled visual comparison has not been recorded.
 
-This release supplies ExeFS `pchtxt` patches for Eden. Other game updates,
-emulators, Switch hardware, online modes and frame generation have not
-been validated. It contains no IPS conversion or console install files.
-Avoid other FPS/clock, timing, projection/output, camera speed, CA or DR
-patches that modify the same features. Compatibility with unrelated mods
-is not implied by the internal byte-overlap checks.
+**Dynamic Resolution Lock:** keeps the game's minimum resolution equal
+to its profile maximum. It does not force 100% screen percentage or prove
+the internal 3D render size. Ultrawide dimensions are requested viewports.
 
-To change a variant, close Eden, move the previous `P4 - ...` variant out,
-then install only its replacement. To uninstall, close Eden and move this
-pack's folders out of the mod directory. Restore your backed-up folders
-to recover your exact previous mod setup; keep the settings you recorded
-before installation. No game, save, firmware or INI file is replaced.
+## Removal and support
 
-`CREDITS.md` identifies project contributions and earlier references.
-Stop Talking is a separate third-party mod and is not bundled.
+Close Eden and remove the folders installed from this pack. Restore your
+backup for your previous setup. The download does not replace game files,
+saves or emulator configuration.
+
+Other game updates, emulators, platforms and unrelated mods are unverified.
+When reporting a problem, include selected options, Eden build, actual FPS
+and a reproducible scene. Evidence and limits are in `VERIFICATION.md`.

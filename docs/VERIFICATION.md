@@ -1,36 +1,32 @@
-# Verification and beta limits — 28 October 2026
+# Test coverage and limitations
 
-User observations and offline checks have different scopes. A patch
-appearing in an Eden log proves it was applied, not that every feature
-worked correctly or reached the advertised FPS target.
+The options in this beta have different levels of testing. A patch loading
+successfully does not establish that every game mode works or that the
+selected frame rate target was reached.
 
-| Component | Recorded evidence | Limits |
+| Component | Evidence | Remaining limits |
 |---|---|---|
-| FPS60 v4 | Applied in the latest logged play session | No complete campaign benchmark |
-| FPS120 v4 + movement correction | User reported corrected following and Oatchi boarding for A38/A40 | FPS during those successful tests was not captured; A41 additions not individually confirmed |
-| FPS180 v4 | Included project variant, byte compatibility checked | Gameplay `not_run`; experimental |
-| Timing A41 | Cumulative A38/A40 bytes retained; applied in the latest log | Six added timers and a velocity estimate lack separate gameplay confirmation; remaining game timing systems still open |
-| Camera +50% v3 | Current option applied in the latest log | Other supplied speeds not individually verified in the current setup |
-| UW5120×2160 A45 | User explicitly reports Dandori split-screen views fixed after latest update; installed SHA and latest application log confirmed | Latest recorded run uses FPS60. This does not establish split correctness at every FPS/mode |
-| UW3440×1440 A45 | Same per-view code, only viewport string changed; offline full/half-view geometry checked | Exact new variant gameplay `not_run`; does not inherit a gameplay pass from the 5120 variant |
-| CA OFF A42 | Applied in the latest log; final intensity field patched to zero | Controlled visual comparison not recorded |
-| DR Lock v5 | Applied in the latest log | Actual 3D render size and density not measured |
+| 60 FPS | Loaded in the latest local play session | No complete campaign benchmark |
+| 120 FPS with movement fixes | Positive feedback for following and boarding Oatchi in earlier tests | FPS during those successful tests was not captured; not every timing path is confirmed |
+| 180 FPS | Code/package checks | No local gameplay test |
+| Movement and timers | Earlier following/boarding fixes have positive feedback; later additions load successfully | Additional timer paths not separately confirmed; not a fix for every frame-dependent system |
+| Camera +50% | Current local option, loaded successfully | Other speeds lack individual confirmation in the current setup |
+| Ultrawide 5120×2160 | Positive feedback for single-player UI/proportions and corrected 3D in the two player views of Dandori battles | Latest recorded session uses 60 FPS; full mode/FPS coverage not established |
+| Ultrawide 3440×1440 | Same projection method with a different viewport request; geometry checks | No gameplay test of this exact version |
+| Chromatic Aberration OFF | Final intensity field patched to zero; patch loads | Controlled visual comparison not recorded |
+| Dynamic Resolution Lock | Current local option, loaded successfully | Actual internal 3D render size/density not measured |
 
-Earlier user tests reported correct single-player UI proportions and no
-yellow glitch with GPU High, including returning to the title and loading
-again. These observations predate A45. A45's full-view output was checked
-offline against the previous 5120 helper; a separate new campaign test has
-not been explicitly reported. Dandori confirmation refers to the **3D
-proportions** the user had identified as wrong; it is not a new HUD audit.
+The 5120×2160 split-view correction was reported by gallongg on 28 October 2026.
+The latest log is from Eden nightly a594c8d60e. Earlier stages also used
+stable v0.2.1; this is not validation of every build/platform.
 
-Packaging checks validate input hashes, Build IDs, syntax, exact patch-byte
-equivalence, the sole viewport-string difference, and **288 permitted
-feature selections** for overlapping write addresses. This is byte-level
-compatibility within this pack, not runtime compatibility with every mod.
-The ARM helper checks use limited interpreters/models, not full game/GPU
-execution. See the Sources download for the patch sources and packaging tool.
+Earlier GPU High tests reported no yellow rendering glitch, including a
+return to the title followed by reloading the save. GPU High remains part
+of the recommended ultrawide setup. That feedback is not a new visual
+comparison of every graphics option.
 
-The setup has been used on native Linux Eden, including stable v0.2.1 and
-nightly a594c8d60e at different stages. The latest A45 feedback corresponds
-to the nightly log. Other builds/platforms are unverified. No guaranteed
-FPS, complete timing fix, GPU benchmark or native-resolution claim is made.
+Offline checks validate input hashes, Build IDs, patch bytes, archive
+extraction and 288 permitted feature combinations for overlapping writes.
+The newer helper assembly is reassembled and compared to the patches.
+Limited instruction/geometry models do not execute the game or GPU.
+Compatibility with unrelated mods is unverified.

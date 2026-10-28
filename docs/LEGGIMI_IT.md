@@ -1,62 +1,57 @@
-# Pikmin 4 — Eden Enhancements 1.0-beta1
+# Installazione e opzioni
 
-Pacchetto modulare di **gallongg** per Pikmin 4 **1.1.1** su Eden,
-Title ID `0100B7C00933A000`. È una beta: esiti e limiti in `VERIFICATION.md`.
+Mod opzionali di **gallongg** per **Pikmin 4 1.1.1 su Eden**.
+Scegli le funzioni che ti servono: non attivare tutte le varianti insieme.
 
-## Contenuto
-
-- FPS: 60, 120 oppure 180. Scegline una sola; 120/180 sperimentali.
-- Timing A41 cumulativa: include le correzioni seguito e salita su Occin
-  di A38/A40, più timer aggiuntivi. Va abilitata con ciascuna patch FPS.
-- Velocità rotazione manuale camera: +12,5%, +25%, +50%, +75% o +100%.
-  Scegline una sola; non cambia distanza o zoom della camera.
-- Ultrawide: 5120×2160 oppure 3440×1440 con proiezione per singola visuale A45.
-- Opzioni indipendenti: aberrazione cromatica OFF e DR Lock v5.
-
-La configurazione locale più recente usa FPS60, A41, camera +50%, A45
-5120×2160, CA OFF e DR Lock. Il nuovo split Dandori 5120 ha conferma
-dell'utente; la variante A45 3440 resta da provare in gioco.
+| Funzione | Opzioni |
+|---|---|
+| FPS più alti | Obiettivo 60, 120 o 180 FPS; una sola opzione |
+| Movimento Pikmin | Correzioni al seguito e alla salita su Occin ai frame rate più alti; richiesta con le mod FPS |
+| Camera più veloce | Rotazione manuale +12,5%, +25%, +50%, +75% o +100%; una sola opzione |
+| Ultrawide | 3440×1440 o 5120×2160; una sola opzione |
+| Grafica opzionale | Aberrazione cromatica OFF e blocco della risoluzione dinamica |
 
 ## Installazione
 
-1. Ferma il gioco e chiudi Eden. Copia le vecchie mod fuori dalla cartella
-   mod per avere un backup. Annota le impostazioni prima di cambiarle.
-2. Per trovare il percorso corretto usa il clic destro su Pikmin 4 in
-   Eden → apertura della posizione dati mod; poi chiudi di nuovo Eden.
-3. Dalle cartelle numerate dello ZIP copia **solo le cartelle `P4 - ...`
-   che scegli**, direttamente nella posizione mod di Pikmin 4. Non copiare
-   la radice del pacchetto né i contenitori numerati.
-4. Ogni cartella `P4 - ...` deve contenere direttamente `exefs/` e i suoi
-   file `.pchtxt`. Le FPS richiedono **entrambi** i file main e SDK, oltre
-   alla mod timing A41 separata.
-5. Nelle proprietà abilita le opzioni scelte e update **1.1.1**. Non
-   abilitare due FPS, due camera o due ultrawide insieme. Velocità Eden100%.
+1. Scarica lo ZIP delle mod allegato alla release GitHub ed estrailo fuori
+   dalla cartella mod di Eden. Sources serve per lo sviluppo.
+2. Ferma il gioco e chiudi Eden. Salva un backup delle vecchie mod che
+   modificano le stesse funzioni, fuori dalla cartella mod.
+3. Trova la posizione dati mod dal menu clic destro di Pikmin 4 in Eden;
+   poi chiudi di nuovo Eden prima di copiare i file.
+4. Copia **solo le cartelle `P4 - ...` scelte** dai contenitori numerati
+   direttamente nella cartella mod del gioco. Non copiare lì la radice
+   dello ZIP o i contenitori numerati.
+5. Nelle proprietà abilita le mod scelte e l'update **1.1.1**. Mantieni
+   la velocità di emulazione al **100%**.
 
-Se hai le vecchie mod del lavoro locale, sposta prima fuori quelle
-equivalenti: FPS v4, camera v3, `TEST - Follow progress delta ... A38`
-(può già contenere A41), `TEST - Ultrawide ... v6` (può già contenere A45),
-CA e DR. Rinominare le nuove cartelle non disabilita le vecchie copie.
+Con una mod FPS servono entrambi i file main e SDK nella sua cartella
+`exefs`, più la mod separata **Pikmin Movement and Timers**. Non attivare
+due mod FPS, due velocità camera o due ultrawide insieme. Rimuovi le
+vecchie copie equivalenti quando aggiorni: il nuovo nome non le disattiva.
 
-## Impostazioni ultrawide
+## Ultrawide e limiti
 
-GPU **High**, scala Eden **1×**, rapporto **Stretch to Window** e area
-immagine con le proporzioni della risoluzione scelta. La CPU locale era
-Unsafe; non è necessario cambiarla per installare questo pacchetto.
-Non applicare un altro4× sopra questi viewport. Con GPU Low in passato
-compariva un difetto giallo, soprattutto al secondo caricamento dopo il titolo.
+Usa GPU **High**, scala Eden **1×**, **Stretch to Window** e un'area
+immagine con le proporzioni della risoluzione scelta. Non applicare un
+altro 4× né una seconda mod che modifica output/proiezione. Con GPU Low
+si era verificato un difetto giallo dopo il ritorno al titolo e un nuovo
+caricamento. La CPU locale è Unsafe; le mod non la cambiano.
 
-I rapporti esatti sono64:27 (5120×2160) e43:18 (3440×1440), entrambi
-commercialmente21:9. Non usare lo stretch su uno schermo32:9; la variante32:9
-non è inclusa. I numeri sono richieste di viewport, non misure della
-risoluzione3D interna. DR Lock non forza screen percentage100%. Le patchFPS
-impostano un obiettivo; non garantiscono120FPS in ogni scena.
+Entrambe le opzioni sono commercialmente 21:9: i rapporti esatti sono
+43:18 per 3440×1440 e 64:27 per 5120×2160. Non sono pensate per 32:9. Le
+misure indicate sono richieste di viewport, non misure del rendering 3D.
+
+La configurazione locale usa 60 FPS e 5120×2160. Le correzioni al seguito e
+alla salita su Occin hanno riscontro positivo. 120 FPS è sperimentale;
+180FPS e l'attuale 3440×1440 non sono ancora state provate in gioco.
+L'obiettivo FPS non garantisce quelle prestazioni in ogni scena; il blocco
+della risoluzione dinamica non forza lo screen percentage al 100%.
+Dettagli delle verifiche in `VERIFICATION.md`.
 
 ## Ripristino
 
-Chiudi Eden e sposta fuori le cartelle `P4 - ...` installate. Ripristina le
-vecchie cartelle dal backup per tornare esattamente alle tue mod precedenti.
-Per tornare al timing originale30FPS disabilita tutte le FPS e la timingA41.
-Nessun salvataggio, gioco, chiave, firmware o INI è modificato dal pacchetto.
-
-Stop Talking non è inclusa: resta una mod di terzi da scaricare a parte.
-Supporto, crediti e limiti dettagliati sono nei documenti inglesi allegati.
+Chiudi Eden e sposta fuori le cartelle installate. Ripristina il backup
+per recuperare le mod precedenti. Per tornare al timing originale a 30 FPS
+disabilita tutte le mod FPS e la mod movimento. Il download non sostituisce
+giochi, salvataggi o file INI.

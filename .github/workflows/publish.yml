@@ -1,0 +1,24 @@
+name: Publish beta 1
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-beta-1
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.repository == 'milkywaysheriff/pikmin4-eden-enhancements'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - name: Check release integrity and recovery
+        run: python3 -m unittest discover -s tests -v
+      - name: Publish verified prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/publish_github.py --ci
