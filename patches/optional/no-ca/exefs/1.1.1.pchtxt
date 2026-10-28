@@ -1,0 +1,13 @@
+@nsobid-060F827BD2B38703E9EA11E3210D89BC
+
+# Pikmin 4 1.1.1 - A42 disable only final chromatic aberration intensity
+# Prepared locally; new behavior requires an Eden gameplay test.
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+05936ECC DDE62614
+062F0A40 7FA610B9
+062F0A44 6A0240F9
+062F0A48 2219D917
+@stop

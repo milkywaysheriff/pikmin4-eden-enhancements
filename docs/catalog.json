@@ -1,0 +1,207 @@
+{
+  "package_version": "1.0-beta1",
+  "publisher": "gallongg",
+  "title_id": "0100B7C00933A000",
+  "update": "1.1.1",
+  "main_build_id": "060F827BD2B38703E9EA11E3210D89BC",
+  "sdk_build_id": "30A1E87B52F5A2AC9879685CBFB93D7CD53114D2000000000000000000000000",
+  "mods": [
+    {
+      "id": "fps60",
+      "group": "fps",
+      "folder": "P4 - FPS 60 - v4",
+      "files": [
+        {
+          "source": "patches/fps/fps60/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "60b5a53629705bef68e0cc68856554ffe7d44dd8c2c43a7c2a0b6ceb0c918ab1"
+        },
+        {
+          "source": "patches/fps/fps60/exefs/1.1.1_sdk.pchtxt",
+          "name": "1.1.1_sdk.pchtxt",
+          "sha256": "259d8d2c19c5e0e17d76cb61845552ab5ec9cd6f249ea37db6924e329b79ad67"
+        }
+      ],
+      "notes": "60 FPS loaded in latest locally recorded session; not a full gameplay certification.",
+      "variant": null
+    },
+    {
+      "id": "fps120",
+      "group": "fps",
+      "folder": "P4 - FPS 120 - v4",
+      "files": [
+        {
+          "source": "patches/fps/fps120/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "d6839f97ddb39839b9640ff85ce69428af13cfb3c99a69420c748c1b63715536"
+        },
+        {
+          "source": "patches/fps/fps120/exefs/1.1.1_sdk.pchtxt",
+          "name": "1.1.1_sdk.pchtxt",
+          "sha256": "0efacfbb3f4744e0b7c6e1155ee07cbef35f5b7817de0fab3dbcaaa88575536c"
+        }
+      ],
+      "notes": "Experimental. Earlier movement/boarding improvements reported with the timing fix; achieved FPS were not measured for that feedback.",
+      "variant": null
+    },
+    {
+      "id": "fps180",
+      "group": "fps",
+      "folder": "P4 - FPS 180 - v4",
+      "files": [
+        {
+          "source": "patches/fps/fps180/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "1ce16970d65d4f5aa663e452c2ce4fbebed64e3f8a1a195f1abf88b942148256"
+        },
+        {
+          "source": "patches/fps/fps180/exefs/1.1.1_sdk.pchtxt",
+          "name": "1.1.1_sdk.pchtxt",
+          "sha256": "6f70a80999e0ad5555d0d667875a1efc2ed54897ac3ec2b51a6a46fae9c01760"
+        }
+      ],
+      "notes": "Experimental. This target has not been play-tested locally.",
+      "variant": null
+    },
+    {
+      "id": "camera12.5",
+      "group": "camera",
+      "folder": "P4 - Camera Speed +12.5 Percent - v3",
+      "files": [
+        {
+          "source": "patches/camera/camera12_5/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "ed099fa7eb76798cd4e663f8faa676a0e56ba485cea7e3c908d0e126064aa78d"
+        }
+      ],
+      "notes": "Alternative manual camera rotation speed. Not individually validated in the current setup.",
+      "variant": null
+    },
+    {
+      "id": "camera25",
+      "group": "camera",
+      "folder": "P4 - Camera Speed +25 Percent - v3",
+      "files": [
+        {
+          "source": "patches/camera/camera25/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "2c40bcaf3ff7d011e35002ad9b51f34dc33e1a63cccc960883a37001825458b9"
+        }
+      ],
+      "notes": "Alternative manual camera rotation speed. Not individually validated in the current setup.",
+      "variant": null
+    },
+    {
+      "id": "camera50",
+      "group": "camera",
+      "folder": "P4 - Camera Speed +50 Percent - v3",
+      "files": [
+        {
+          "source": "patches/camera/camera50/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "3a86838660cc71e6bd3ac601243bb0d8e59cc286fcfdcac762f456a3686ec9da"
+        }
+      ],
+      "notes": "Current local camera option, loaded in the latest session.",
+      "variant": null
+    },
+    {
+      "id": "camera75",
+      "group": "camera",
+      "folder": "P4 - Camera Speed +75 Percent - v3",
+      "files": [
+        {
+          "source": "patches/camera/camera75/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "91c3c95272f33305ea8fc87cf98f64c1a7eac32e1649507be10d7cb14db3710e"
+        }
+      ],
+      "notes": "Alternative manual camera rotation speed. Not individually validated in the current setup.",
+      "variant": null
+    },
+    {
+      "id": "camera100",
+      "group": "camera",
+      "folder": "P4 - Camera Speed +100 Percent - v3",
+      "files": [
+        {
+          "source": "patches/camera/camera100/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "140526d5dbc59e4e580433710e8ce5de5ab21a1a9b6597e234db17cf80afeb13"
+        }
+      ],
+      "notes": "Alternative manual camera rotation speed. Not individually validated in the current setup.",
+      "variant": null
+    },
+    {
+      "id": "timing",
+      "group": "timing",
+      "folder": "P4 - Pikmin Movement and Timers - A41",
+      "files": [
+        {
+          "source": "patches/timing/timing/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "52871f4cf30507bc001f9877fcf5cf3e111f3a929c225a5215c3a87b9589be2a"
+        }
+      ],
+      "notes": "Cumulative A38/A40/A41. Following and Oatchi boarding improvements reported for A38/A40; A41 additions are loaded, but not individually validated. Does not fix every frame-dependent system.",
+      "variant": null
+    },
+    {
+      "id": "uw5120x2160",
+      "group": "ultrawide",
+      "folder": "P4 - Ultrawide 5120x2160 - Per View A45",
+      "files": [
+        {
+          "source": "patches/ultrawide/uw5120x2160/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "c4e1a95b3853b9ca4d701dfdc9ad5cfc941dbcfb52ecfe75ec0d75b6a90f2dee"
+        }
+      ],
+      "notes": "User reports corrected Dandori split-screen 3D. Confirmed with installed A45 and latest log loading FPS60. Single-player/UI had earlier positive feedback; full mode coverage not tested.",
+      "variant": "5120x2160"
+    },
+    {
+      "id": "uw3440x1440",
+      "group": "ultrawide",
+      "folder": "P4 - Ultrawide 3440x1440 - Per View A45",
+      "files": [
+        {
+          "source": "patches/ultrawide/uw5120x2160/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "c4e1a95b3853b9ca4d701dfdc9ad5cfc941dbcfb52ecfe75ec0d75b6a90f2dee"
+        }
+      ],
+      "notes": "New viewport-string variant of the same A45 code. Static geometry and byte checks only; no local gameplay test of this exact variant.",
+      "variant": "3440x1440"
+    },
+    {
+      "id": "no-ca",
+      "group": "optional",
+      "folder": "P4 - Chromatic Aberration OFF - A42",
+      "files": [
+        {
+          "source": "patches/optional/no-ca/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "f0c8218e3cc9ae136e31c4ef664da78b437c678ce3eec6485debd9883450472c"
+        }
+      ],
+      "notes": "Loaded in game. Final chromatic aberration intensity patched to zero; no controlled visual comparison recorded.",
+      "variant": null
+    },
+    {
+      "id": "dr-lock",
+      "group": "optional",
+      "folder": "P4 - Dynamic Resolution Lock - v5",
+      "files": [
+        {
+          "source": "patches/optional/dr-lock/exefs/1.1.1.pchtxt",
+          "name": "1.1.1.pchtxt",
+          "sha256": "bc1fad3129a9e25049c6f0e1b8ef8d89ca2851224276cdf1c51e24df2232eaac"
+        }
+      ],
+      "notes": "Current local option. Locks the minimum to the game profile maximum; does not force 100 percent screen percentage or certify 1:1 rendering.",
+      "variant": null
+    }
+  ]
+}

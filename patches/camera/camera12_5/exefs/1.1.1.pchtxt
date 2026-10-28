@@ -1,0 +1,38 @@
+@nsobid-060F827BD2B38703E9EA11E3210D89BC
+
+# Pikmin 4 1.1.1 - Camera +12.5 percent - 1.1.1 v3
+# Build: 060F827BD2B38703E9EA11E3210D89BC
+# ARM64 hook tests passed. Full-game testing is still required.
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+// Scale manual camera rotation
+019DFE4C B1422415
+// Manual angular increment x1.125; preserve q31
+062F0910 FF0F9F3C
+062F0914 0308281E
+062F0918 1F502E1E
+062F091C 63083F1E
+062F0920 FF07C13C
+062F0924 4BBDDB16
+// Scale manual camera rotation
+019DFF88 6A422415
+// Manual angular increment x1.125; preserve q31
+062F0930 FF0F9F3C
+062F0934 0308281E
+062F0938 1F502E1E
+062F093C 63083F1E
+062F0940 FF07C13C
+062F0944 92BDDB16
+// Scale manual camera rotation
+019DE078 364A2415
+// Manual angular increment x1.125; preserve q31
+062F0950 FF0F9F3C
+062F0954 2308201E
+062F0958 1F502E1E
+062F095C 63083F1E
+062F0960 FF07C13C
+062F0964 C6B5DB16
+@stop

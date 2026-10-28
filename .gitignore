@@ -1,0 +1,14 @@
+dist/
+__pycache__/
+*.pyc
+.venv/
+.publish-state.json
+.env
+.env.*
+reports/
+*.nsp
+*.xci
+*.nca
+*.nso
+prod.keys
+title.keys

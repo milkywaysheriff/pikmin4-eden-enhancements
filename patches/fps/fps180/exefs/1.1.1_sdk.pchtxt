@@ -1,0 +1,13 @@
+@nsobid-30A1E87B52F5A2AC9879685CBFB93D7CD53114D2000000000000000000000000
+
+# Pikmin 4 1.1.1 - FPS 180 - Realtime Timing EXPERIMENTAL - 1.1.1 v4
+# Build: 30A1E87B52F5A2AC9879685CBFB93D7CD53114D2000000000000000000000000
+# ARM64 hook tests passed. Full-game testing is still required.
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+// QueueBufferInput.swap_interval=300 for Eden presentation
+004411C0 8B258052
+@stop

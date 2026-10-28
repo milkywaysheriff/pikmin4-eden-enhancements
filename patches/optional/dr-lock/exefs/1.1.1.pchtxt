@@ -1,0 +1,26 @@
+@nsobid-060F827BD2B38703E9EA11E3210D89BC
+
+# Pikmin 4 1.1.1 - Optional - DR Lock Native Maximum - 1.1.1 v5
+# Build: 060F827BD2B38703E9EA11E3210D89BC
+# ARM64 hook tests passed. Full-game testing is still required.
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+// Lock adaptive resolution using the existing native maximum before the original engine call
+009EA938 5A186495
+// Copy MinScreenPercentage from existing MaxScreenPercentage; keep OperationMode, maximum, output and screen percentage untouched
+062F0AA0 E827BFA9
+062F0AA4 EA2FBFA9
+062F0AA8 48E501B0
+062F0AAC 09A944F9
+062F0AB0 089D44F9
+062F0AB4 890000B4
+062F0AB8 680000B4
+062F0ABC 2A2D4029
+062F0AC0 0A2D0029
+062F0AC4 EA2FC1A8
+062F0AC8 E827C1A8
+062F0ACC D564E017
+@stop
